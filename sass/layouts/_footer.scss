@@ -44,6 +44,12 @@
 
         & .contact {
 
+            &__phones {
+                margin: 1rem 0;
+                a {
+                    display: block;
+                }
+            }
             
         }
 
