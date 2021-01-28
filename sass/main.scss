@@ -2,12 +2,13 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
 @import "components/nav";
+@import "components/card";
 
-
-
-
+@import "layouts/header";
+@import "layouts/gallery";
+@import "layouts/best-seller";
+@import "layouts/footer";
 
 
 @import "base/animations";

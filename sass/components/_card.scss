@@ -1,0 +1,56 @@
+
+
+.card {
+    grid-column: span 1;
+    margin: 0 auto;
+    height: 500px;
+    border-radius: .8rem;
+    @include shadow;
+    // width: 24%;
+    cursor: pointer;
+    transition: .3s all linear;
+    width: 100%;
+
+    &__top {
+        height: 75%;
+        border-radius: .8rem;
+        clip-path: 0 0, 100% 0, 100% 100%, 0 100%;
+        display: flex;
+        align-items: center;
+
+        & img {
+            border-radius: .8rem;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__body {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+
+        & h4{
+            font-size: 20px;
+        }
+        & p {
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+
+
+
+    @include respond(from-tab-land){
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    
+
+}

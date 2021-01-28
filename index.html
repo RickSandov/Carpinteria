@@ -1,28 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carpintería</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
 
-    <nav class="nav" id="navbar">
-        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt=""></a>
+    <nav class="nav sticky" id="navbar">
+        <a href="index.html" class="logo">Carpintería</a>
         <input type="checkbox" id="check">
-        <label for="check" data-aos="popUp" class="nav-check"><i class="fas fa-bars"></i></label>
+        <label for="check" data-aos="popUp" class="nav-check">-</label>
         <ul>
-            <li class="active"><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li class="active"><a href="proyectos.html">Inicio</a></li>
+            <li><a href="proyectos.html">Cocinas</a></li>
+            <li><a href="nosotros.html">Alacenas</a></li>
+            <li><a href="nosotros.html">Gabinetes</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li class="icons"><a href="contacto.html"> <svg>
+                        <use href="assets/images/shopping-cart.svg#Capa_1"></use>
+                    </svg> </a><a href="contacto.html"><svg>
+                        <use href="assets/images/user.svg#Capa_1"></use>
+                    </svg></a></li>
         </ul>
     </nav>
 
-    <h1 data-aos-once="true" data-aos="appear">Animated Heading</h1>
-    
-    <script src="js/index.js"></script>
+    <header class="header">
+        <div class="header__content">
+            <h1>Haz tu cocina a la medida</h1>
+            <a href="#">Personaliza tu cocina</a>
+        </div>
+    </header>
+
+
+    <section class="best-sellers-box">
+        <div>
+            <h3>Muebles populares</h3>
+        </div>
+        <div class="best-sellers">
+            <div class="card" onclick="location.href='#';">
+                <div class="card__top">
+                    <img src="assets/images/mueble1.jpg" alt="">
+                </div>
+                <div class="card__body">
+                    <h4>Nombre del mueble</h4>
+                    <p>$999.00</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <div class="card__top">
+                    <img src="assets/images/mueble2.webp" alt="">
+                </div>
+                <div class="card__body">
+                    <h4>Nombre del mueble</h4>
+                    <p>$999.00</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <div class="card__top">
+                    <img src="assets/images/mueble3.png" alt="">
+                </div>
+                <div class="card__body">
+                    <h4>Nombre del mueble</h4>
+                    <p>$999.00</p>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='#';">
+                <div class="card__top">
+                    <img src="assets/images/mueble4.jpg" alt="">
+                </div>
+                <div class="card__body">
+                    <h4>Nombre del mueble</h4>
+                    <p>$999.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="more">
+        <a href="#">Ver más</a>
+    </div>
+
+
+    <div class="gallery-box">
+        <div>
+            <h3>Galería</h3>
+        </div>
+        <div class="gallery">
+            <a class="gallery__item" href="#">
+                <img class="gallery__image" src="assets/images/casa1.jpg">
+            </a>
+            <a class="gallery__item" href="#">
+                <img class="gallery__image" src="assets/images/sala1.jpg">
+            </a>
+            <a class="gallery__item" href="#">
+                <img class="gallery__image" src="assets/images/sala2.jpg">
+            </a>
+            <a class="gallery__item" href="#">
+                <img class="gallery__image" src="assets/images/recamara1.jpg">
+            </a>
+            <a class="gallery__item" href="#">
+                <img class="gallery__image" src="assets/images/sala3.jpg">
+            </a>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Visítanos</h3>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14577.990651289076!2d-104.70014243022462!3d24.01350970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bc9d0b1e0d881%3A0x3d0aa54eb15147e2!2sWalmart%20Lomas!5e0!3m2!1ses!2smx!4v1611801843373!5m2!1ses!2smx"
+        width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+
+    <footer class="footer">
+        <div class="contact-box">
+            <div class="contact">
+                <h4>Información de contacto</h4>
+                <div class="contact__address">
+                    <a href="#">Durango, Dgo.</a>
+                </div>
+                <div class="contact__phones">
+                    <a href="#">(618) 123 4567</a>
+                    <a href="#">(618) 987 6543</a>
+                </div>
+                <div class="contact__emails">
+                    <a href="#">ventas@carpinteria.com.mx</a>
+                    <a href="#"> contacto@carpinteria.com.mx</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <h4>Más de nosotros</h4>
+                <div class="social-media__icons">
+                    <a href="#"><svg>
+                            <use href="assets/images/fb.svg#fb"></use>
+                        </svg></a>
+                    <a href="#"><svg>
+                            <use href="assets/images/ig.svg#ig"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <a href="#" class="logo">carpintería</a>
+            <div class="info__privacy">
+                <a href="#">Términos y condiciones <strong>|</strong> </a>
+                <a href="#">Política de privacidad <strong>|</strong> </a>
+                <a href="#">Política de cookies</a>
+            </div>
+            <div class="info__gg">
+                <p>CARPINTERÍA ©2020 by</p>
+                <a href=""><img src="assets/images/gg.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/index.js"></script> -->
 </body>
+
 </html>

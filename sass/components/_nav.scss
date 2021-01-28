@@ -1,7 +1,9 @@
 .active {
     & a {
-        background-color: $color-primary;
-        border-radius: 5rem;
+        @include shadow;
+        color: white;
+        background-color: $color-text;
+        border-radius: 8px;
 
 
         @include respond(tab-port) {
@@ -23,6 +25,7 @@
 
     .active {
         & a {
+
             &:link,
             &:visited {
                 color: white !important;
@@ -40,13 +43,20 @@
         & li {
             // display: inline-block;
             list-style: none;
+            display: flex;
+            align-items: center;
 
             & a {
-                font-size: 2rem;
+                font-size: 15px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
 
                 @include respond(tab-port) {
                     font-size: 1.3rem;
                 }
+
+
             }
         }
     }
@@ -116,15 +126,14 @@
                 // margin: -7.7rem 0;
                 padding: 3rem 0;
                 width: 100%;
-                font-size: 3rem;
                 // color: red;
 
                 & a {
 
                     &:hover,
                     &:active {
-                        background: none;
-                        color: none;
+                        // background: none;
+                        // color: none;
                     }
                 }
 
@@ -132,16 +141,16 @@
                 &:hover,
                 &:active,
                 & .active {
-                    background-color: $color-primary !important;
                     @include shadow;
+                    color: white;
+                    background-color: $color-text;
+                    border-radius: 8px;
                 }
 
 
             }
 
-            @include respond(tab-port) {
-
-            }
+            @include respond(tab-port) {}
         }
 
         #check:checked {
@@ -151,13 +160,13 @@
                 background-color: #fff;
                 @include shadow;
                 transform: scale(1.5) translateY(.5rem);
-                
+
             }
 
             &~ul {
                 left: 0;
             }
-            
+
         }
 
 
@@ -167,10 +176,23 @@
 
 
 
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 
     & .logo {
-        display: none;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+
+    & a.logo {
+        margin-left: 3rem;
+        text-decoration: none;
+        color: $color-text-light;
+        font-size: 30px !important;
+        text-transform: uppercase;
+
     }
 
 }
@@ -187,9 +209,9 @@
                         color: white;
                     }
 
-                   
+
                 }
-            } 
+            }
         }
     }
 
@@ -199,7 +221,6 @@
         // transition: .4s all ease-in-out;
         position: fixed;
         width: 100%;
-        height: 10rem;
         background-color: white;
         @include shadow-nav;
         z-index: 999;
@@ -208,6 +229,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        padding: 1.5rem 0;
 
         & ul {
             & li {
@@ -218,10 +241,10 @@
                         color: $color-text !important
                     }
 
-                    
-                   
+
+
                 }
-            } 
+            }
         }
 
         & .logo {
@@ -247,7 +270,7 @@
                 padding: .5rem 2rem;
                 margin: 0 2rem;
 
-                font-size: 2rem;
+                font-size: 15px;
                 transition: all .5s;
                 // padding: .5rem 3rem;
                 // margin: 0 2rem;
@@ -287,13 +310,39 @@
                     &:hover {
                         color: white !important;
                     }
-                   
+
                 }
             }
 
-            
+
         }
 
-        
+
+    }
+}
+
+
+.icons {
+    & a {
+        margin: 0 !important;
+        padding: 0 2.5rem 0 0 !important;
+
+        &:hover {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            transform: scale(1.1);
+        }
+
+        & svg {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    
+
+    & .icons {
+        display: flex;
+        align-items: center;
     }
 }

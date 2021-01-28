@@ -1,0 +1,38 @@
+.header {
+    height: 86.9vh;
+    // background-image: url("../assets/hero.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        max-width: 90%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h1 {
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            line-height: 1.2;
+            @include respond(phone){
+                font-size: 40px;
+                margin-bottom: 6rem;
+            }
+        }
+        
+        & a {
+            @include btn($color-text, white, 1.5rem, 6rem);
+            margin-top: 2rem;
+        }
+    }
+
+
+}
